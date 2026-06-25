@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions Générales de Vente — Chez Mariette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  :root{--bordeaux:#4A2A3A;--cream:#EFEAE2;--cream-light:#FAF8F4;--terracotta:#A8703F;--terracotta-light:#D4A876;--ink:#211C1A;--ink-soft:#5C5450;--line:rgba(33,28,26,0.10);--nav-h:68px;}
+  *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;background:rgba(239,234,226,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:100%;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--ink);text-decoration:none;}
+  .brand-mark{width:34px;height:34px;border-radius:50%;background:var(--bordeaux);color:var(--cream-light);display:flex;align-items:center;justify-content:center;font-size:17px;}
+  .back-link{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:500;color:var(--ink-soft);text-decoration:none;transition:color .15s;}
+  .back-link:hover{color:var(--ink);}
+  .back-link .ico{width:16px;height:16px;}
+  .page-header{background:var(--bordeaux);color:var(--cream-light);padding:calc(var(--nav-h) + 56px) 0 56px;}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--terracotta-light);margin-bottom:14px;display:block;}
+  .page-header h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,4vw,48px);line-height:1.1;}
+  .page-header p{margin-top:12px;color:rgba(250,246,238,0.7);font-size:15px;}
+  .content-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;padding:64px 0 96px;align-items:start;}
+  .toc{position:sticky;top:calc(var(--nav-h) + 24px);}
+  .toc ul{list-style:none;}
+  .toc li a{display:block;font-size:13.5px;color:var(--ink-soft);text-decoration:none;padding:8px 0;border-left:2px solid var(--line);padding-left:14px;transition:color .15s,border-color .15s;}
+  .toc li a:hover{color:var(--ink);border-left-color:var(--terracotta);}
+  .toc-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-soft);opacity:0.6;margin-bottom:12px;}
+  .legal-body section{margin-bottom:48px;}
+  .legal-body h2{font-family:'Fraunces',serif;font-size:24px;font-weight:600;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line);}
+  .legal-body h3{font-size:16px;font-weight:600;margin:20px 0 10px;}
+  .legal-body p{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-bottom:12px;}
+  .legal-body p:last-child{margin-bottom:0;}
+  .legal-body ul{list-style:disc;padding-left:20px;margin:10px 0;}
+  .legal-body li{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-bottom:6px;}
+  .info-block{background:var(--cream-light);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:16px 0;}
+  .info-block p{margin:0 0 6px;}
+  .info-block p:last-child{margin:0;}
+  .info-block strong{color:var(--ink);}
+  a{color:var(--terracotta);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .highlight-box{background:rgba(168,112,63,0.08);border:1px solid rgba(168,112,63,0.25);border-radius:12px;padding:20px 24px;margin:16px 0;}
+  .highlight-box p{margin:0;font-size:14.5px;}
+  .table-wrap{overflow-x:auto;margin:16px 0;}
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  thead{background:var(--bordeaux);color:var(--cream-light);}
+  th{padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  td{padding:11px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  tr:nth-child(even) td{background:rgba(239,234,226,0.5);}
+  footer{background:var(--ink);color:rgba(250,246,238,0.5);text-align:center;padding:28px;font-size:13px;font-family:'JetBrains Mono',monospace;}
+  footer a{color:rgba(250,246,238,0.7);}
+  :focus-visible{outline:2px solid var(--terracotta);outline-offset:3px;border-radius:4px;}
+  @media(max-width:800px){.content-layout{grid-template-columns:1fr;gap:32px;}.toc{position:static;}.wrap{padding:0 20px;}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="chez-mariette.html" class="brand"><span class="brand-mark">M</span> Chez Mariette</a>
+    <a href="chez-mariette.html" class="back-link"><i data-lucide="arrow-left" class="ico"></i> Retour au site</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <span class="kicker">Légal</span>
+    <h1>Conditions Générales de Vente</h1>
+    <p>Conditions applicables aux prestations de services d'assistant client automatisé proposées aux professionnels de la restauration.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="content-layout">
+    <aside class="toc">
+      <div class="toc-label">Sommaire</div>
+      <ul>
+        <li><a href="#champ">Champ d'application</a></li>
+        <li><a href="#services">Prestations proposées</a></li>
+        <li><a href="#commande">Processus de commande</a></li>
+        <li><a href="#prix">Prix et TVA</a></li>
+        <li><a href="#paiement">Paiement</a></li>
+        <li><a href="#delais">Délais d'exécution</a></li>
+        <li><a href="#obligations">Obligations des parties</a></li>
+        <li><a href="#retractation">Droit de rétractation</a></li>
+        <li><a href="#garanties">Garanties légales</a></li>
+        <li><a href="#responsabilite">Responsabilité</a></li>
+        <li><a href="#resiliation">Résiliation</a></li>
+        <li><a href="#pi">Propriété intellectuelle</a></li>
+        <li><a href="#confidentialite">Confidentialité</a></li>
+        <li><a href="#droit">Droit applicable</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <div class="legal-body">
+
+      <section id="champ">
+        <h2>1. Champ d'application</h2>
+        <p>Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent les relations contractuelles entre [NOM DE VOTRE SOCIÉTÉ] (ci-après « le Prestataire »), [FORME JURIDIQUE], immatriculée au RCS de Toulouse sous le numéro [XXXXXXX], dont le siège social est situé [ADRESSE], et tout professionnel (ci-après « le Client ») souhaitant bénéficier des prestations de services d'assistant client automatisé.</p>
+        <p>Les présentes CGV s'appliquent exclusivement aux relations entre professionnels (B2B). Elles prévalent sur toute autre condition générale d'achat du Client, sauf accord particulier contraire établi par écrit et signé par les deux parties.</p>
+        <p>Le Client déclare agir dans le cadre de son activité professionnelle et non en qualité de consommateur au sens du Code de la consommation.</p>
+      </section>
+
+      <section id="services">
+        <h2>2. Prestations proposées</h2>
+        <p>Le Prestataire propose les prestations suivantes :</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Pack</th><th>Contenu</th><th>Prix HT</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Essentiel</strong></td>
+                <td>Chatbot WhatsApp / Instagram personnalisé · Réponses automatiques (horaires, menu, accès) · Prise de réservation intégrée · Rappels anti no-show · Mise en place 5-7 jours</td>
+                <td>1 658,33 € HT<br><small>(1 990 € TTC)</small></td>
+              </tr>
+              <tr>
+                <td><strong>Complet</strong></td>
+                <td>Tout le pack Essentiel + Relance avis Google · Suivi clients · Tableau de bord · 1h de formation incluse</td>
+                <td>3 741,67 € HT<br><small>(4 490 € TTC)</small></td>
+              </tr>
+              <tr>
+                <td><strong>Sur-mesure</strong></td>
+                <td>Développement spécifique selon cahier des charges établi conjointement</td>
+                <td>Sur devis</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Le détail précis des prestations comprises dans chaque pack est décrit dans le devis ou la proposition commerciale remise au Client. Toute prestation non expressément mentionnée dans ce document fera l'objet d'un avenant et d'une facturation séparée.</p>
+      </section>
+
+      <section id="commande">
+        <h2>3. Processus de commande et formation du contrat</h2>
+        <h3>3.1 Devis et proposition commerciale</h3>
+        <p>Toute commande est précédée d'un devis ou d'une proposition commerciale remis par le Prestataire, valable pendant <strong>30 jours</strong> à compter de sa date d'émission.</p>
+        <h3>3.2 Acceptation</h3>
+        <p>Le contrat est formé à la réception par le Prestataire du devis signé (avec la mention « Bon pour accord ») accompagné du règlement de l'acompte défini à l'article 5. La commande peut également être validée par e-mail avec confirmation explicite.</p>
+        <h3>3.3 Modification</h3>
+        <p>Toute modification de commande après validation est soumise à l'accord écrit du Prestataire et peut entraîner une révision du prix et/ou des délais.</p>
+      </section>
+
+      <section id="prix">
+        <h2>4. Prix et TVA</h2>
+        <p>Les prix indiqués sur le Site sont exprimés en euros TTC (toutes taxes comprises) pour les clients français assujettis à la TVA au taux en vigueur (actuellement 20 %).</p>
+        <p>Le Prestataire se réserve le droit de modifier ses tarifs à tout moment. Toutefois, les prestations commandées sont facturées au prix en vigueur au moment de l'acceptation du devis.</p>
+        <p>Pour les clients professionnels établis dans un autre État membre de l'UE et disposant d'un numéro de TVA intracommunautaire valide, la facturation est établie hors taxes dans le cadre de l'autoliquidation (art. 283-2 du CGI).</p>
+      </section>
+
+      <section id="paiement">
+        <h2>5. Modalités de paiement</h2>
+        <h3>5.1 Échéancier</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Échéance</th><th>Montant</th><th>Condition</th></tr></thead>
+            <tbody>
+              <tr><td>Acompte à la commande</td><td>50 % du montant TTC</td><td>Dû à la signature du devis</td></tr>
+              <tr><td>Solde à la livraison</td><td>50 % du montant TTC</td><td>Dû à la mise en ligne de l'assistant</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>5.2 Moyens de paiement acceptés</h3>
+        <ul>
+          <li>Virement bancaire (IBAN communiqué sur facture)</li>
+          <li>Paiement en ligne sécurisé via [Stripe / autre prestataire] (carte bancaire)</li>
+          <li>Chèque bancaire (France uniquement — encaissement avant démarrage)</li>
+        </ul>
+        <h3>5.3 Retard de paiement</h3>
+        <p>En application de l'article L.441-10 du Code de commerce, tout retard de paiement entraîne de plein droit, dès le lendemain de la date d'échéance :</p>
+        <ul>
+          <li>Des pénalités de retard au taux de trois fois le taux d'intérêt légal en vigueur ;</li>
+          <li>Une indemnité forfaitaire pour frais de recouvrement de <strong>40 €</strong> (article D.441-5 du Code de commerce) ;</li>
+          <li>Le droit pour le Prestataire de suspendre immédiatement toutes les prestations en cours.</li>
+        </ul>
+      </section>
+
+      <section id="delais">
+        <h2>6. Délais d'exécution</h2>
+        <p>Le délai indicatif de mise en service de l'assistant est de <strong>5 à 7 jours ouvrés</strong> à compter de la réception de l'acompte et des éléments nécessaires fournis par le Client (accès WhatsApp Business, informations restaurant, carte, horaires, etc.).</p>
+        <p>Ce délai est conditionné à la transmission complète et dans les temps des éléments demandés. Tout retard imputable au Client dans la fourniture de ces éléments entraîne un report proportionnel du délai de livraison, sans indemnité due au Client.</p>
+        <p>En cas de retard imputable au Prestataire dépassant 15 jours ouvrés, le Client peut demander par écrit l'annulation de la commande et le remboursement de l'acompte versé, sans autres dommages et intérêts.</p>
+      </section>
+
+      <section id="obligations">
+        <h2>7. Obligations des parties</h2>
+        <h3>7.1 Obligations du Prestataire</h3>
+        <ul>
+          <li>Réaliser les prestations décrites dans le devis avec le soin et la diligence attendus d'un professionnel ;</li>
+          <li>Obligation de moyens (et non de résultat) s'agissant de services numériques soumis à des paramètres extérieurs ;</li>
+          <li>Maintenir la confidentialité des informations communiquées par le Client ;</li>
+          <li>Assurer un support technique pendant la phase de mise en place.</li>
+        </ul>
+        <h3>7.2 Obligations du Client</h3>
+        <ul>
+          <li>Fournir en temps et en heure l'ensemble des éléments nécessaires à la réalisation des prestations ;</li>
+          <li>Disposer des droits et autorisations nécessaires sur les comptes WhatsApp Business et Instagram utilisés ;</li>
+          <li>Respecter les conditions d'utilisation de Meta (WhatsApp Business API, Instagram API) ;</li>
+          <li>Informer le Prestataire de tout changement susceptible d'affecter les prestations (horaires, menu, coordonnées, etc.) ;</li>
+          <li>Régler les factures aux échéances convenues.</li>
+        </ul>
+      </section>
+
+      <section id="retractation">
+        <h2>8. Droit de rétractation</h2>
+        <div class="highlight-box">
+          <p><strong>Les présentes CGV s'appliquent exclusivement aux relations B2B (entre professionnels).</strong> Conformément à l'article L.221-3 du Code de la consommation, le droit de rétractation de 14 jours prévu pour les consommateurs ne s'applique pas aux contrats conclus entre professionnels dans le cadre de leur activité principale.</p>
+        </div>
+        <p>Si vous êtes un professionnel agissant hors de votre activité principale ou si vous avez conclu ce contrat en dehors de votre établissement sans employé dédié (auto-entrepreneur par exemple), vous êtes susceptible de bénéficier du régime consommateur. Contactez-nous pour toute question à ce sujet.</p>
+        <p>Toute annulation après signature et versement de l'acompte entraîne la conservation de celui-ci à titre d'indemnité, sauf accord contraire formalisé par écrit.</p>
+      </section>
+
+      <section id="garanties">
+        <h2>9. Garanties légales</h2>
+        <p>Les prestations sont réalisées conformément aux règles de l'art et aux spécifications convenues. En cas de non-conformité avérée par rapport au devis signé, le Client dispose d'un délai de <strong>15 jours ouvrés</strong> suivant la livraison pour signaler le défaut par écrit.</p>
+        <p>Le Prestataire s'engage à corriger gratuitement tout défaut de conformité signalé dans ce délai, dans un délai maximum de 15 jours ouvrés supplémentaires.</p>
+        <p>La garantie ne couvre pas les dysfonctionnements résultant d'une mauvaise utilisation, d'une modification non autorisée, de pannes des infrastructures tierces (Meta, opérateurs télécom) ou d'un défaut de fourniture des éléments requis par le Client.</p>
+      </section>
+
+      <section id="responsabilite">
+        <h2>10. Limitation de responsabilité</h2>
+        <p>La responsabilité du Prestataire est strictement limitée aux dommages directs et prévisibles résultant d'un manquement avéré à ses obligations. En aucun cas le Prestataire ne pourra être tenu responsable des dommages indirects (manque à gagner, perte de clientèle, préjudice d'image, etc.).</p>
+        <p>Le montant total des indemnités pouvant être réclamées au Prestataire est plafonné au montant HT effectivement encaissé au titre de la prestation concernée.</p>
+        <p>Le Prestataire n'est pas responsable des interruptions de service liées aux plateformes tierces (WhatsApp Business API, Instagram API, services d'hébergement) ou à des modifications des conditions d'utilisation de Meta.</p>
+      </section>
+
+      <section id="resiliation">
+        <h2>11. Résiliation</h2>
+        <p>Les prestations du pack Essentiel et du pack Complet constituent des missions ponctuelles à exécution limitée dans le temps (mise en place). Elles ne génèrent pas d'abonnement récurrent sauf accord explicite contraire.</p>
+        <p>En cas de manquement grave de l'une ou l'autre des parties à ses obligations, non réparé dans un délai de 15 jours suivant mise en demeure par lettre recommandée avec accusé de réception, l'autre partie peut résilier le contrat de plein droit. Les sommes dues au titre des prestations réalisées restent exigibles.</p>
+      </section>
+
+      <section id="pi">
+        <h2>12. Propriété intellectuelle</h2>
+        <p>À compter du paiement intégral des sommes dues, le Client acquiert le droit d'utiliser l'assistant conversationnel développé pour son établissement dans le cadre de son activité professionnelle.</p>
+        <p>Le Prestataire conserve tous les droits de propriété intellectuelle sur les outils, méthodes, savoir-faire, codes et composants génériques utilisés pour la réalisation des prestations. Ceux-ci ne font pas l'objet d'une cession.</p>
+        <p>Le Client autorise le Prestataire à mentionner la réalisation de la prestation dans ses références commerciales, sauf opposition expresse formulée par écrit.</p>
+      </section>
+
+      <section id="confidentialite">
+        <h2>13. Confidentialité</h2>
+        <p>Chaque partie s'engage à tenir confidentielles toutes les informations, documents et données de nature confidentielle communiqués par l'autre partie dans le cadre de l'exécution du contrat, pendant toute la durée du contrat et pendant une période de <strong>3 ans</strong> après son terme.</p>
+        <p>Ne sont pas considérées comme confidentielles les informations qui sont ou deviennent publiques par des moyens légaux, ou dont la partie réceptrice avait connaissance antérieurement.</p>
+      </section>
+
+      <section id="droit">
+        <h2>14. Droit applicable et juridiction compétente</h2>
+        <p>Les présentes CGV sont soumises au droit français.</p>
+        <p>En cas de litige relatif à l'interprétation, la validité ou l'exécution des présentes CGV, les parties conviennent de rechercher une solution amiable. À défaut d'accord dans un délai de 30 jours, le litige sera soumis à la compétence exclusive du <strong>Tribunal de Commerce de Toulouse</strong>, même en cas de pluralité de défendeurs ou d'appel en garantie.</p>
+        <p><strong>Date de dernière mise à jour :</strong> 25 juin 2026 — Version 1.0</p>
+      </section>
+
+      <section id="contact">
+        <h2>15. Contact</h2>
+        <div class="info-block">
+          <p><strong>[NOM DE VOTRE SOCIÉTÉ]</strong></p>
+          <p><strong>Service commercial :</strong> <a href="mailto:contact@[votre-domaine].fr">contact@[votre-domaine].fr</a></p>
+          <p><strong>Téléphone :</strong> +33 (0)5 [XX XX XX XX]</p>
+          <p><strong>Adresse :</strong> [ADRESSE COMPLÈTE], Toulouse</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="chez-mariette.html">Accueil</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="cgu.html">CGU</a> · <a href="cgv.html">CGV</a> · <a href="politique-cookies.html">Cookies</a>
+</footer>
+
+<script>if(window.lucide)lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Chez Mariette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  :root { --bordeaux:#4A2A3A; --cream:#EFEAE2; --cream-light:#FAF8F4; --terracotta:#A8703F; --terracotta-light:#D4A876; --ink:#211C1A; --ink-soft:#5C5450; --line:rgba(33,28,26,0.10); --nav-h:68px; }
+  *{margin:0;padding:0;box-sizing:border-box;} html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;background:rgba(239,234,226,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:100%;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--ink);text-decoration:none;}
+  .brand-mark{width:34px;height:34px;border-radius:50%;background:var(--bordeaux);color:var(--cream-light);display:flex;align-items:center;justify-content:center;font-size:17px;}
+  .back-link{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:500;color:var(--ink-soft);text-decoration:none;transition:color .15s;}
+  .back-link:hover{color:var(--ink);}
+  .back-link .ico{width:16px;height:16px;}
+  .page-header{background:var(--bordeaux);color:var(--cream-light);padding:calc(var(--nav-h) + 56px) 0 56px;}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--terracotta-light);margin-bottom:14px;display:block;}
+  .page-header h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,4vw,48px);line-height:1.1;}
+  .page-header p{margin-top:12px;color:rgba(250,246,238,0.7);font-size:15px;}
+  .content-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;padding:64px 0 96px;align-items:start;}
+  .toc{position:sticky;top:calc(var(--nav-h) + 24px);}
+  .toc ul{list-style:none;}
+  .toc li a{display:block;font-size:13.5px;color:var(--ink-soft);text-decoration:none;padding:8px 0;border-left:2px solid var(--line);padding-left:14px;transition:color .15s,border-color .15s;}
+  .toc li a:hover{color:var(--ink);border-left-color:var(--terracotta);}
+  .toc-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-soft);opacity:0.6;margin-bottom:12px;}
+  .legal-body section{margin-bottom:48px;}
+  .legal-body h2{font-family:'Fraunces',serif;font-size:24px;font-weight:600;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line);}
+  .legal-body h3{font-size:16px;font-weight:600;margin:20px 0 10px;}
+  .legal-body p{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-bottom:12px;}
+  .legal-body p:last-child{margin-bottom:0;}
+  .legal-body ul{list-style:disc;padding-left:20px;margin:10px 0;}
+  .legal-body li{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-bottom:6px;}
+  .info-block{background:var(--cream-light);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:16px 0;}
+  .info-block p{margin:0 0 6px;}
+  .info-block p:last-child{margin:0;}
+  .info-block strong{color:var(--ink);}
+  .table-wrap{overflow-x:auto;margin:16px 0;}
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  thead{background:var(--bordeaux);color:var(--cream-light);}
+  th{padding:12px 16px;text-align:left;font-weight:600;font-size:13px;}
+  td{padding:11px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  tr:nth-child(even) td{background:rgba(239,234,226,0.5);}
+  a{color:var(--terracotta);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .highlight-box{background:rgba(168,112,63,0.08);border:1px solid rgba(168,112,63,0.25);border-radius:12px;padding:20px 24px;margin:16px 0;}
+  .highlight-box p{margin:0;font-size:14.5px;}
+  footer{background:var(--ink);color:rgba(250,246,238,0.5);text-align:center;padding:28px;font-size:13px;font-family:'JetBrains Mono',monospace;}
+  footer a{color:rgba(250,246,238,0.7);}
+  :focus-visible{outline:2px solid var(--terracotta);outline-offset:3px;border-radius:4px;}
+  @media(max-width:800px){.content-layout{grid-template-columns:1fr;gap:32px;}.toc{position:static;}.wrap{padding:0 20px;}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="chez-mariette.html" class="brand"><span class="brand-mark">M</span> Chez Mariette</a>
+    <a href="chez-mariette.html" class="back-link"><i data-lucide="arrow-left" class="ico"></i> Retour au site</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <span class="kicker">RGPD</span>
+    <h1>Politique de confidentialité</h1>
+    <p>Comment nous collectons, utilisons et protégeons vos données personnelles. Conforme au RGPD (UE 2016/679) et à la loi Informatique et Libertés.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="content-layout">
+    <aside class="toc">
+      <div class="toc-label">Sommaire</div>
+      <ul>
+        <li><a href="#responsable">Responsable du traitement</a></li>
+        <li><a href="#collecte">Données collectées</a></li>
+        <li><a href="#finalites">Finalités et bases légales</a></li>
+        <li><a href="#conservation">Durée de conservation</a></li>
+        <li><a href="#destinataires">Destinataires</a></li>
+        <li><a href="#transferts">Transferts hors UE</a></li>
+        <li><a href="#droits">Vos droits</a></li>
+        <li><a href="#securite">Sécurité</a></li>
+        <li><a href="#mineurs">Mineurs</a></li>
+        <li><a href="#modifications">Modifications</a></li>
+        <li><a href="#contact">Contact DPO</a></li>
+      </ul>
+    </aside>
+
+    <div class="legal-body">
+
+      <section id="responsable">
+        <h2>1. Responsable du traitement</h2>
+        <div class="info-block">
+          <p><strong>Société :</strong> [NOM DE VOTRE SOCIÉTÉ]</p>
+          <p><strong>Adresse :</strong> [ADRESSE], Toulouse, France</p>
+          <p><strong>E-mail :</strong> <a href="mailto:rgpd@[votre-domaine].fr">rgpd@[votre-domaine].fr</a></p>
+          <p><strong>SIRET :</strong> [000 000 000 00000]</p>
+        </div>
+        <p>[NOM DE VOTRE SOCIÉTÉ] est responsable du traitement de vos données personnelles au sens du Règlement Général sur la Protection des Données (RGPD, Règlement UE 2016/679) et de la loi n° 78-17 du 6 janvier 1978 modifiée.</p>
+      </section>
+
+      <section id="collecte">
+        <h2>2. Données collectées</h2>
+        <h3>2.1 Données que vous nous transmettez directement</h3>
+        <ul>
+          <li><strong>Formulaire de contact / demande de démo :</strong> nom, prénom, adresse e-mail, numéro de téléphone, nom de l'établissement, message libre.</li>
+          <li><strong>Échanges par e-mail ou téléphone :</strong> coordonnées et contenu des échanges.</li>
+          <li><strong>Relation commerciale (clients) :</strong> données de facturation (nom, adresse, SIRET), coordonnées bancaires via prestataire de paiement sécurisé.</li>
+        </ul>
+        <h3>2.2 Données collectées automatiquement</h3>
+        <ul>
+          <li><strong>Données de navigation :</strong> adresse IP (anonymisée), type de navigateur, système d'exploitation, pages visitées, durée de session, URL de provenance.</li>
+          <li><strong>Cookies et traceurs :</strong> voir notre <a href="politique-cookies.html">Politique de cookies</a>.</li>
+        </ul>
+        <h3>2.3 Données que nous ne collectons pas</h3>
+        <p>Nous ne collectons aucune donnée dite « sensible » au sens de l'article 9 du RGPD (origines ethniques, opinions politiques, données de santé, données biométriques, etc.).</p>
+      </section>
+
+      <section id="finalites">
+        <h2>3. Finalités et bases légales du traitement</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Finalité</th><th>Base légale</th><th>Détail</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Répondre à vos demandes de contact et de démo</td><td>Intérêt légitime / Consentement</td><td>Traitement de votre demande avant signature d'un contrat éventuel</td></tr>
+              <tr><td>Exécution du contrat de prestation de services</td><td>Exécution du contrat (art. 6.1.b RGPD)</td><td>Mise en place et suivi de l'assistant automatisé</td></tr>
+              <tr><td>Facturation et obligations comptables</td><td>Obligation légale (art. 6.1.c RGPD)</td><td>Conservation des factures pendant 10 ans (Code de commerce)</td></tr>
+              <tr><td>Envoi de communications commerciales (newsletter, actualités)</td><td>Consentement (art. 6.1.a RGPD)</td><td>Uniquement si vous avez coché la case correspondante</td></tr>
+              <tr><td>Amélioration du site (analytics)</td><td>Intérêt légitime / Consentement</td><td>Mesure d'audience anonymisée</td></tr>
+              <tr><td>Prévention des fraudes et sécurité</td><td>Intérêt légitime (art. 6.1.f RGPD)</td><td>Journaux d'accès, protection contre les attaques</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="conservation">
+        <h2>4. Durée de conservation</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Catégorie de données</th><th>Durée de conservation</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Prospects (demandes sans suite commerciale)</td><td>3 ans à compter du dernier contact</td></tr>
+              <tr><td>Données clients (contrat actif)</td><td>Durée du contrat + 5 ans (prescription commerciale)</td></tr>
+              <tr><td>Données de facturation</td><td>10 ans (obligation légale comptable)</td></tr>
+              <tr><td>Données de navigation / logs</td><td>13 mois maximum</td></tr>
+              <tr><td>Données de newsletter</td><td>Jusqu'au retrait du consentement + 3 ans</td></tr>
+              <tr><td>Cookies analytiques</td><td>13 mois (CNIL)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>À l'expiration de ces délais, vos données sont supprimées ou anonymisées de manière irréversible.</p>
+      </section>
+
+      <section id="destinataires">
+        <h2>5. Destinataires des données</h2>
+        <p>Vos données sont destinées aux seuls membres habilités de [NOM DE VOTRE SOCIÉTÉ] dans le cadre de leurs attributions. Elles peuvent également être transmises aux sous-traitants suivants, soigneusement sélectionnés et liés par un accord de traitement conforme au RGPD :</p>
+        <ul>
+          <li><strong>Hébergement web :</strong> [Hébergeur — ex : OVH, Vercel] — hébergement des serveurs en France/UE</li>
+          <li><strong>Messagerie professionnelle :</strong> [Ex : Google Workspace, Microsoft 365]</li>
+          <li><strong>Outil CRM :</strong> [Ex : HubSpot, Notion] — gestion de la relation client</li>
+          <li><strong>Facturation / comptabilité :</strong> [Ex : Pennylane, Axonaut]</li>
+          <li><strong>Paiement en ligne :</strong> [Ex : Stripe] — nous ne stockons jamais vos données bancaires</li>
+          <li><strong>Analytics :</strong> [Ex : Matomo auto-hébergé / Plausible] — mesure d'audience</li>
+        </ul>
+        <p>Vos données ne sont <strong>jamais vendues</strong> à des tiers. Elles ne sont pas communiquées à des partenaires commerciaux à des fins de prospection.</p>
+      </section>
+
+      <section id="transferts">
+        <h2>6. Transferts hors Union européenne</h2>
+        <p>Nous nous efforçons de traiter vos données exclusivement au sein de l'Union européenne. Dans le cas où un sous-traitant transfèrerait des données vers un pays tiers (ex. : États-Unis), ce transfert est encadré par :</p>
+        <ul>
+          <li>Les clauses contractuelles types de la Commission européenne (CCT) ;</li>
+          <li>Et/ou une décision d'adéquation de la Commission européenne (ex. : Data Privacy Framework pour les États-Unis).</li>
+        </ul>
+        <p>Vous pouvez obtenir la liste complète de nos sous-traitants et les garanties applicables en nous contactant à <a href="mailto:rgpd@[votre-domaine].fr">rgpd@[votre-domaine].fr</a>.</p>
+      </section>
+
+      <section id="droits">
+        <h2>7. Vos droits</h2>
+        <p>Conformément au RGPD et à la loi Informatique et Libertés, vous disposez des droits suivants sur vos données personnelles :</p>
+        <ul>
+          <li><strong>Droit d'accès (art. 15 RGPD) :</strong> obtenir la confirmation que vos données sont traitées et en recevoir une copie.</li>
+          <li><strong>Droit de rectification (art. 16 RGPD) :</strong> faire corriger des données inexactes ou incomplètes.</li>
+          <li><strong>Droit à l'effacement (art. 17 RGPD) :</strong> demander la suppression de vos données, sous réserve d'obligations légales de conservation.</li>
+          <li><strong>Droit à la limitation du traitement (art. 18 RGPD) :</strong> demander le gel temporaire du traitement de vos données.</li>
+          <li><strong>Droit à la portabilité (art. 20 RGPD) :</strong> recevoir vos données dans un format structuré et lisible par machine.</li>
+          <li><strong>Droit d'opposition (art. 21 RGPD) :</strong> vous opposer à un traitement basé sur notre intérêt légitime, notamment à la prospection commerciale.</li>
+          <li><strong>Droit de retirer votre consentement :</strong> à tout moment, sans préjudice des traitements effectués antérieurement.</li>
+          <li><strong>Droit de définir des directives post-mortem :</strong> instructions relatives au sort de vos données après votre décès.</li>
+        </ul>
+        <div class="highlight-box">
+          <p><strong>Pour exercer vos droits :</strong> adressez votre demande par e-mail à <a href="mailto:rgpd@[votre-domaine].fr">rgpd@[votre-domaine].fr</a> en joignant une copie de votre pièce d'identité. Nous répondons dans un délai maximum d'<strong>un mois</strong> (délai pouvant être prolongé à trois mois pour les demandes complexes).</p>
+        </div>
+        <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a> — 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07.</p>
+      </section>
+
+      <section id="securite">
+        <h2>8. Sécurité des données</h2>
+        <p>[NOM DE VOTRE SOCIÉTÉ] met en œuvre les mesures techniques et organisationnelles appropriées pour garantir la sécurité de vos données personnelles contre la perte, la destruction, l'altération ou l'accès non autorisé :</p>
+        <ul>
+          <li>Chiffrement des communications (protocole HTTPS / TLS 1.3)</li>
+          <li>Accès aux données strictement limité aux personnes habilitées</li>
+          <li>Authentification forte (MFA) sur les outils internes</li>
+          <li>Sauvegardes régulières chiffrées</li>
+          <li>Mises à jour de sécurité régulières des systèmes</li>
+        </ul>
+        <p>En cas de violation de données susceptible d'engendrer un risque pour vos droits et libertés, nous nous engageons à vous en notifier dans les meilleurs délais et à la signaler à la CNIL dans un délai de 72 heures conformément à l'article 33 du RGPD.</p>
+      </section>
+
+      <section id="mineurs">
+        <h2>9. Mineurs</h2>
+        <p>Nos services s'adressent exclusivement aux professionnels (restaurateurs, gérants d'établissements). Nous ne collectons sciemment aucune donnée relative à des personnes de moins de 16 ans. Si vous avez connaissance d'un tel traitement, contactez-nous immédiatement à <a href="mailto:rgpd@[votre-domaine].fr">rgpd@[votre-domaine].fr</a>.</p>
+      </section>
+
+      <section id="modifications">
+        <h2>10. Modifications de la politique</h2>
+        <p>Nous nous réservons le droit de mettre à jour la présente politique de confidentialité à tout moment, notamment pour nous conformer à l'évolution de la réglementation. La version en vigueur est toujours celle accessible sur cette page.</p>
+        <p>En cas de modification substantielle, nous vous en informerons par e-mail ou par une notice visible sur le site, au moins 30 jours avant l'entrée en vigueur des changements.</p>
+        <p><strong>Date de dernière mise à jour :</strong> 25 juin 2026 — Version 1.0</p>
+      </section>
+
+      <section id="contact">
+        <h2>11. Contact — Délégué à la Protection des Données</h2>
+        <p>[NOM DE VOTRE SOCIÉTÉ] [a désigné un Délégué à la Protection des Données (DPO) / n'est pas tenu de désigner un DPO mais traite vos demandes via le responsable de traitement]. Pour toute question relative à la protection de vos données :</p>
+        <div class="info-block">
+          <p><strong>E-mail :</strong> <a href="mailto:rgpd@[votre-domaine].fr">rgpd@[votre-domaine].fr</a></p>
+          <p><strong>Courrier :</strong> [NOM DE VOTRE SOCIÉTÉ] — Protection des données, [ADRESSE], Toulouse</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="chez-mariette.html">Accueil</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="cgu.html">CGU</a> · <a href="cgv.html">CGV</a> · <a href="politique-cookies.html">Cookies</a>
+</footer>
+
+<script>if(window.lucide)lucide.createIcons();</script>
+</body>
+</html>

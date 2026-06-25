@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions Générales d'Utilisation — Chez Mariette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  :root{--bordeaux:#4A2A3A;--cream:#EFEAE2;--cream-light:#FAF8F4;--terracotta:#A8703F;--terracotta-light:#D4A876;--ink:#211C1A;--ink-soft:#5C5450;--line:rgba(33,28,26,0.10);--nav-h:68px;}
+  *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;background:rgba(239,234,226,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:100%;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--ink);text-decoration:none;}
+  .brand-mark{width:34px;height:34px;border-radius:50%;background:var(--bordeaux);color:var(--cream-light);display:flex;align-items:center;justify-content:center;font-size:17px;}
+  .back-link{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:500;color:var(--ink-soft);text-decoration:none;transition:color .15s;}
+  .back-link:hover{color:var(--ink);}
+  .back-link .ico{width:16px;height:16px;}
+  .page-header{background:var(--bordeaux);color:var(--cream-light);padding:calc(var(--nav-h) + 56px) 0 56px;}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--terracotta-light);margin-bottom:14px;display:block;}
+  .page-header h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,4vw,48px);line-height:1.1;}
+  .page-header p{margin-top:12px;color:rgba(250,246,238,0.7);font-size:15px;}
+  .content-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;padding:64px 0 96px;align-items:start;}
+  .toc{position:sticky;top:calc(var(--nav-h) + 24px);}
+  .toc ul{list-style:none;}
+  .toc li a{display:block;font-size:13.5px;color:var(--ink-soft);text-decoration:none;padding:8px 0;border-left:2px solid var(--line);padding-left:14px;transition:color .15s,border-color .15s;}
+  .toc li a:hover{color:var(--ink);border-left-color:var(--terracotta);}
+  .toc-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-soft);opacity:0.6;margin-bottom:12px;}
+  .legal-body section{margin-bottom:48px;}
+  .legal-body h2{font-family:'Fraunces',serif;font-size:24px;font-weight:600;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line);}
+  .legal-body h3{font-size:16px;font-weight:600;margin:20px 0 10px;}
+  .legal-body p{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-bottom:12px;}
+  .legal-body p:last-child{margin-bottom:0;}
+  .legal-body ul{list-style:disc;padding-left:20px;margin:10px 0;}
+  .legal-body li{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-bottom:6px;}
+  .info-block{background:var(--cream-light);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:16px 0;}
+  .info-block p{margin:0 0 6px;}
+  .info-block p:last-child{margin:0;}
+  .info-block strong{color:var(--ink);}
+  a{color:var(--terracotta);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .warning-box{background:rgba(74,42,58,0.06);border:1px solid rgba(74,42,58,0.15);border-radius:12px;padding:20px 24px;margin:16px 0;}
+  .warning-box p{margin:0;font-size:14.5px;}
+  footer{background:var(--ink);color:rgba(250,246,238,0.5);text-align:center;padding:28px;font-size:13px;font-family:'JetBrains Mono',monospace;}
+  footer a{color:rgba(250,246,238,0.7);}
+  :focus-visible{outline:2px solid var(--terracotta);outline-offset:3px;border-radius:4px;}
+  @media(max-width:800px){.content-layout{grid-template-columns:1fr;gap:32px;}.toc{position:static;}.wrap{padding:0 20px;}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="chez-mariette.html" class="brand"><span class="brand-mark">M</span> Chez Mariette</a>
+    <a href="chez-mariette.html" class="back-link"><i data-lucide="arrow-left" class="ico"></i> Retour au site</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <span class="kicker">Légal</span>
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p>Règles d'utilisation du site web chezmariette.fr et de ses contenus. Toute navigation sur ce site implique l'acceptation des présentes CGU.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="content-layout">
+    <aside class="toc">
+      <div class="toc-label">Sommaire</div>
+      <ul>
+        <li><a href="#objet">Objet</a></li>
+        <li><a href="#acces">Accès au site</a></li>
+        <li><a href="#propriete">Propriété intellectuelle</a></li>
+        <li><a href="#contenus">Contenus utilisateur</a></li>
+        <li><a href="#comportement">Comportement interdit</a></li>
+        <li><a href="#responsabilite">Limitation de responsabilité</a></li>
+        <li><a href="#liens">Liens hypertextes</a></li>
+        <li><a href="#donnees">Données personnelles</a></li>
+        <li><a href="#cookies">Cookies</a></li>
+        <li><a href="#droit">Droit applicable</a></li>
+        <li><a href="#modifications">Modifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <div class="legal-body">
+
+      <section id="objet">
+        <h2>1. Objet et champ d'application</h2>
+        <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») définissent les modalités et conditions d'utilisation du site web accessible à l'adresse <strong>[https://www.votre-domaine.fr]</strong> (ci-après « le Site »), édité par [NOM DE VOTRE SOCIÉTÉ] (ci-après « l'Éditeur »).</p>
+        <p>Le Site a pour objet de présenter les services d'assistant client automatisé proposés par l'Éditeur aux professionnels de la restauration, notamment au travers d'une démonstration interactive.</p>
+        <p>Toute connexion au Site et toute navigation sur ses pages impliquent l'acceptation pleine et entière des présentes CGU. Si vous n'en acceptez pas les termes, vous devez vous abstenir d'utiliser le Site.</p>
+      </section>
+
+      <section id="acces">
+        <h2>2. Accès au Site</h2>
+        <p>Le Site est accessible gratuitement à tout utilisateur disposant d'un accès à Internet. L'Éditeur ne prend en charge ni les frais de connexion à Internet ni le matériel informatique nécessaire pour accéder au Site.</p>
+        <p>L'Éditeur se réserve le droit, à tout moment et sans préavis, de modifier, suspendre ou interrompre l'accès au Site ou à certaines de ses fonctionnalités, notamment à des fins de maintenance, d'amélioration ou de mise en conformité réglementaire.</p>
+        <p>Le Site est conçu pour être utilisé par des professionnels (restaurateurs, gérants d'établissements). Toute utilisation à des fins personnelles ou hors cadre professionnel ne constitue pas la destination principale du Site.</p>
+      </section>
+
+      <section id="propriete">
+        <h2>3. Propriété intellectuelle</h2>
+        <p>L'ensemble des éléments composant le Site — textes, images, graphismes, logos, icônes, vidéos, sons, interfaces, maquettes, code source — est la propriété exclusive de [NOM DE VOTRE SOCIÉTÉ] ou fait l'objet d'une licence accordée à l'Éditeur, et est protégé par le droit de la propriété intellectuelle français et international.</p>
+        <p>Toute reproduction, représentation, distribution, modification, traduction ou exploitation, totale ou partielle, des éléments du Site, par quelque procédé que ce soit, est strictement interdite sans l'autorisation préalable et écrite de l'Éditeur.</p>
+        <p>Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale de l'auteur de l'infraction, conformément aux articles L.335-2 et suivants du Code de la Propriété Intellectuelle.</p>
+        <p>Les marques, dénominations sociales, logos et signes distinctifs figurant sur le Site sont protégés. Leur utilisation sans autorisation écrite préalable constitue une violation des droits de l'Éditeur.</p>
+      </section>
+
+      <section id="contenus">
+        <h2>4. Contenus et informations</h2>
+        <p>Les informations diffusées sur le Site (tarifs, caractéristiques des services, témoignages, données statistiques) sont présentées à titre indicatif et peuvent être modifiées à tout moment. Elles ne constituent pas une offre contractuelle au sens juridique.</p>
+        <p>La démonstration interactive présente sur le Site illustre le fonctionnement d'un assistant conversationnel dans un cadre fictif. Les échanges simulés ne constituent pas un vrai service de réservation actif.</p>
+        <p>L'Éditeur s'efforce de maintenir des informations à jour mais ne garantit pas leur exhaustivité, leur exactitude ou leur applicabilité à une situation particulière.</p>
+      </section>
+
+      <section id="comportement">
+        <h2>5. Comportements interdits</h2>
+        <p>Dans le cadre de l'utilisation du Site, il est strictement interdit de :</p>
+        <ul>
+          <li>Utiliser le Site à des fins illicites, frauduleuses ou portant atteinte aux droits de tiers ;</li>
+          <li>Tenter d'accéder de manière non autorisée aux systèmes informatiques de l'Éditeur ;</li>
+          <li>Introduire des virus, chevaux de Troie, vers ou tout autre programme malveillant ;</li>
+          <li>Extraire, scraper ou collecter de manière automatisée des données du Site ;</li>
+          <li>Reproduire ou imiter le Site à des fins commerciales sans autorisation ;</li>
+          <li>Utiliser le Site pour envoyer des communications non sollicitées (spam) ;</li>
+          <li>Contourner les mesures de sécurité ou de protection technique mises en place.</li>
+        </ul>
+        <div class="warning-box">
+          <p>Tout manquement aux présentes CGU peut entraîner la suspension immédiate de l'accès au Site et, le cas échéant, des poursuites judiciaires.</p>
+        </div>
+      </section>
+
+      <section id="responsabilite">
+        <h2>6. Limitation de responsabilité</h2>
+        <h3>6.1 Disponibilité et exactitude</h3>
+        <p>L'Éditeur ne peut être tenu responsable des dommages directs ou indirects résultant de l'accès au Site, de son utilisation, d'une interruption de service, d'une panne technique ou d'informations inexactes ou incomplètes.</p>
+        <h3>6.2 Décisions professionnelles</h3>
+        <p>Les informations publiées sur le Site n'ont pas vocation à se substituer à un conseil professionnel (juridique, fiscal, technique). L'Éditeur décline toute responsabilité pour les décisions prises sur la base des seules informations du Site.</p>
+        <h3>6.3 Force majeure</h3>
+        <p>La responsabilité de l'Éditeur ne peut être engagée en cas d'événement de force majeure au sens de l'article 1218 du Code civil (catastrophe naturelle, panne des opérateurs télécoms, cyberattaque d'ampleur, etc.).</p>
+      </section>
+
+      <section id="liens">
+        <h2>7. Liens hypertextes</h2>
+        <h3>7.1 Liens sortants</h3>
+        <p>Le Site peut contenir des liens vers des sites tiers. Ces liens sont fournis à titre informatif. L'Éditeur n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leurs pratiques en matière de confidentialité ou leur disponibilité.</p>
+        <h3>7.2 Liens entrants</h3>
+        <p>La mise en place d'un lien hypertexte vers le Site est autorisée sous réserve qu'il n'implique pas de présentation trompeuse, qu'il ne nuise pas à la réputation de l'Éditeur, et que l'Éditeur soit informé au préalable à l'adresse <a href="mailto:contact@[votre-domaine].fr">contact@[votre-domaine].fr</a>. Le cadrage (framing) du Site est interdit.</p>
+      </section>
+
+      <section id="donnees">
+        <h2>8. Données personnelles</h2>
+        <p>Le traitement de vos données personnelles dans le cadre de l'utilisation du Site est régi par notre <a href="politique-confidentialite.html">Politique de confidentialité</a>, conforme au RGPD et à la loi Informatique et Libertés. Nous vous invitons à la consulter pour connaître l'ensemble de vos droits.</p>
+      </section>
+
+      <section id="cookies">
+        <h2>9. Cookies et traceurs</h2>
+        <p>Le Site utilise des cookies et traceurs. Vous pouvez gérer vos préférences à tout moment en consultant notre <a href="politique-cookies.html">Politique de cookies</a> ou en paramétrant votre navigateur.</p>
+      </section>
+
+      <section id="droit">
+        <h2>10. Droit applicable et règlement des litiges</h2>
+        <p>Les présentes CGU sont soumises au droit français.</p>
+        <p>En cas de litige relatif à l'interprétation ou à l'exécution des présentes CGU, les parties s'engagent à rechercher une solution amiable. À défaut d'accord dans un délai de trente (30) jours suivant la notification du différend, le litige sera soumis aux juridictions compétentes du ressort de la Cour d'appel de Toulouse.</p>
+        <p>Conformément à l'article L.612-1 du Code de la consommation, en cas de litige non résolu amiablement, vous pouvez recourir gratuitement à un médiateur de la consommation. Le médiateur compétent est : [NOM DU MÉDIATEUR], joignable à [COORDONNÉES].</p>
+      </section>
+
+      <section id="modifications">
+        <h2>11. Modifications des CGU</h2>
+        <p>L'Éditeur se réserve le droit de modifier les présentes CGU à tout moment. Les modifications prennent effet dès leur publication sur le Site. La version en vigueur est celle accessible à cette adresse à la date de votre visite.</p>
+        <p>L'utilisation du Site après modification des CGU vaut acceptation de la nouvelle version.</p>
+        <p><strong>Date de dernière mise à jour :</strong> 25 juin 2026 — Version 1.0</p>
+      </section>
+
+      <section id="contact">
+        <h2>12. Contact</h2>
+        <div class="info-block">
+          <p><strong>[NOM DE VOTRE SOCIÉTÉ]</strong></p>
+          <p><strong>E-mail :</strong> <a href="mailto:contact@[votre-domaine].fr">contact@[votre-domaine].fr</a></p>
+          <p><strong>Adresse :</strong> [ADRESSE COMPLÈTE], Toulouse</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="chez-mariette.html">Accueil</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="cgu.html">CGU</a> · <a href="cgv.html">CGV</a> · <a href="politique-cookies.html">Cookies</a>
+</footer>
+
+<script>if(window.lucide)lucide.createIcons();</script>
+</body>
+</html>
