@@ -1,0 +1,28 @@
+# Configuration Netlify — headers de sécurité HTTP
+# À placer à la RACINE de votre repo (même niveau que index.html)
+# Documentation : https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Empêche le site d'être affiché dans une <iframe> sur un autre domaine (anti-clickjacking)
+    X-Frame-Options = "SAMEORIGIN"
+
+    # Empêche le navigateur de "deviner" le type MIME d'un fichier (anti-injection de script)
+    X-Content-Type-Options = "nosniff"
+
+    # Active la protection XSS des anciens navigateurs (legacy, mais recommandé)
+    X-XSS-Protection = "1; mode=block"
+
+    # Force HTTPS pendant 1 an, y compris sur les sous-domaines
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Limite les informations envoyées aux sites externes via le referrer
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Désactive l'accès aux capteurs/caméra/micro/géoloc par défaut (le site n'en a pas besoin)
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
+    # Content-Security-Policy : autorise uniquement les ressources nécessaires au site
+    # (polices Google Fonts + icônes Lucide via unpkg). À ajuster si vous ajoutez d'autres scripts.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
