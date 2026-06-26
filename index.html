@@ -32,6 +32,7 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: var(--nav-h); }
   body {
     font-family: 'Inter', sans-serif;
     background: var(--cream);
@@ -393,6 +394,30 @@
   .cta-final h2 em { font-style: italic; color: var(--terracotta-light); }
   .cta-final p { color: rgba(250,246,238,0.78); font-size: 17px; max-width: 480px; margin: 0 auto 32px; }
   .cta-final .hero-actions { justify-content: center; }
+  .contact-form-card {
+    background: var(--cream-light); color: var(--ink);
+    border-radius: 20px; padding: 36px 32px; max-width: 540px;
+    margin: 36px auto 0; text-align: left;
+    box-shadow: var(--shadow-modal);
+  }
+  .contact-form-card .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .contact-form-card label { display: block; font-size: 13.5px; font-weight: 600; margin-bottom: 6px; color: var(--ink-soft); }
+  .contact-form-card .field { margin-bottom: 16px; }
+  .contact-form-card input, .contact-form-card textarea {
+    width: 100%; border: 1px solid var(--line-strong); border-radius: 10px;
+    padding: 11px 13px; font-family: 'Inter', sans-serif; font-size: 15px;
+    color: var(--ink); background: #fff; transition: border-color 0.2s var(--ease-out);
+  }
+  .contact-form-card input:focus, .contact-form-card textarea:focus {
+    outline: none; border-color: var(--terracotta);
+  }
+  .contact-form-card textarea { resize: vertical; min-height: 84px; }
+  .contact-form-card .btn { width: 100%; justify-content: center; }
+  .contact-form-card .form-note { font-size: 12.5px; color: var(--ink-soft); margin-top: 12px; text-align: center; }
+  @media (max-width: 560px) {
+    .contact-form-card .form-row { grid-template-columns: 1fr; }
+    .contact-form-card { padding: 28px 22px; }
+  }
 
   /* ===== FOOTER ===== */
   footer { background: var(--ink); color: rgba(250,246,238,0.6); padding: 56px 0 32px; }
@@ -521,7 +546,7 @@
     </div>
     <div class="nav-cta-wrap">
       <a href="#tarifs" class="btn btn-ghost">Voir les tarifs</a>
-      <a href="#contact" class="btn btn-primary"><i data-lucide="calendar-check" class="ico"></i> Réserver une démo</a>
+      <a href="#contact" class="btn btn-primary"><i data-lucide="phone-call" class="ico"></i> Réserver un appel</a>
       <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
         <i data-lucide="menu" class="ico"></i>
       </button>
@@ -548,7 +573,7 @@
     </nav>
     <div class="mobile-menu-footer">
       <a href="#tarifs" class="btn btn-ghost">Voir les tarifs</a>
-      <a href="#contact" class="btn btn-primary"><i data-lucide="calendar-check" class="ico"></i> Réserver une démo</a>
+      <a href="#contact" class="btn btn-primary"><i data-lucide="phone-call" class="ico"></i> Réserver un appel</a>
     </div>
   </div>
 </div>
@@ -562,8 +587,8 @@
         <h1>Le téléphone n'arrête pas de sonner. <em>Et si ça répondait tout seul ?</em></h1>
         <p class="lead">Pendant que vous gérez la salle, vos clients ont toujours quelqu'un en face. Plus de réservations qui rentrent, plus d'avis qui s'accumulent, et un téléphone qui ne vous vole plus vos soirées.</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary"><i data-lucide="calendar-check" class="ico"></i> Réserver une démo</a>
-          <a href="#demo" class="btn btn-outline-light"><i data-lucide="play" class="ico"></i> Tester l'assistant</a>
+          <a href="#contact" class="btn btn-primary"><i data-lucide="phone-call" class="ico"></i> Réserver un appel</a>
+          <a href="#demo" class="btn btn-outline-light"><i data-lucide="play" class="ico"></i> Essayer la démo</a>
         </div>
        <div class="hero-reassure">
   <span><i data-lucide="check-circle" class="ico"></i> Plus aucun client perdu, même le restaurant fermé</span>
@@ -860,10 +885,43 @@
 <section class="section cta-final" id="contact">
   <div class="wrap">
     <h2 class="reveal">Et si votre téléphone <em>travaillait pour vous</em> ce soir ?</h2>
-    <p class="reveal">Réservez une démo gratuite de 20 minutes. On vous montre l'assistant en conditions réelles, avec votre carte et vos horaires.</p>
-    <div class="hero-actions reveal">
-      <a href="mailto:demonstration.automa@gmail.com" class="btn btn-light"><i data-lucide="calendar-check" class="ico"></i> Réserver une démo</a>
-      <a href="tel:+33607338091" class="btn btn-outline-light"><i data-lucide="phone" class="ico"></i> Nous appeler</a>
+    <p class="reveal">Laissez vos coordonnées, on vous rappelle pour caler une démo gratuite de 20 minutes — avec votre carte et vos horaires.</p>
+
+    <form class="contact-form-card reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none">
+        <label>Ne pas remplir si vous êtes humain : <input name="bot-field"></label>
+      </p>
+      <div class="form-row">
+        <div class="field">
+          <label for="cf-nom">Votre nom</label>
+          <input type="text" id="cf-nom" name="nom" required>
+        </div>
+        <div class="field">
+          <label for="cf-resto">Nom du restaurant</label>
+          <input type="text" id="cf-resto" name="restaurant" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="cf-tel">Téléphone</label>
+          <input type="tel" id="cf-tel" name="telephone" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email">
+        </div>
+      </div>
+      <div class="field">
+        <label for="cf-message">Un mot sur votre besoin (optionnel)</label>
+        <textarea id="cf-message" name="message" placeholder="Ex : on perd des appels le soir, on aimerait voir comment ça marche pour notre carte..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary"><i data-lucide="phone-call" class="ico"></i> Demander à être rappelé</button>
+      <p class="form-note">On vous rappelle sous 24h ouvrées. Aucune carte bancaire demandée.</p>
+    </form>
+
+    <div class="hero-actions reveal" style="margin-top:28px;">
+      <a href="tel:+33607338091" class="btn btn-outline-light"><i data-lucide="phone" class="ico"></i> Ou appelez-nous directement</a>
     </div>
   </div>
 </section>
@@ -887,7 +945,7 @@
         <div class="footer-col">
           <h4>Ressources</h4>
           <a href="#faq">FAQ</a>
-          <a href="#contact">Réserver une démo</a>
+          <a href="#contact">Réserver un appel</a>
           <a href="mailto:demonstration.automa@gmail.com">Nous contacter</a>
         </div>
         <div class="footer-col">

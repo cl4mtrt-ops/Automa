@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merci — Automa</title>
+<meta name="description" content="Votre demande a bien été envoyée à Automa.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bordeaux: #4A2A3A;
+    --cream-light: #FAF8F4;
+    --terracotta: #A8703F;
+    --terracotta-light: #D4A876;
+    --ink-soft: #5C5450;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: var(--bordeaux); color: var(--cream-light);
+    font-family: 'Inter', sans-serif; text-align: center; padding: 24px;
+  }
+  .card { max-width: 480px; }
+  h1 { font-family: 'Fraunces', serif; font-weight: 600; font-size: clamp(28px, 5vw, 40px); margin: 0 0 16px; }
+  h1 em { font-style: italic; color: var(--terracotta-light); }
+  p { font-size: 17px; color: rgba(250,246,238,0.8); margin: 0 0 28px; line-height: 1.5; }
+  a.btn {
+    display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+    background: var(--terracotta); color: var(--cream-light); font-weight: 600;
+    padding: 13px 26px; border-radius: 999px; font-size: 15px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Message bien reçu <em>— merci !</em></h1>
+    <p>On a votre demande. Vous serez recontacté sous 24h ouvrées pour caler votre démo gratuite.</p>
+    <a class="btn" href="/index.html">← Retour au site</a>
+  </div>
+</body>
+</html>
